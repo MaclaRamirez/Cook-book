@@ -1,0 +1,44 @@
+% Complete recipe example
+\begin{recipe}
+[% 
+    preparationtime = {\unit[15]{min}},
+    bakingtime={\unit[30]{min}},
+    bakingtemperature={\protect\bakingtemperature{
+        % fanoven=\unit[230]{\textcelcius},
+        topbottomheat=\unit[180]{\degree C},
+        % topheat=\unit[195]{°C},
+        % gasstove=Level 2
+        }},
+    portion = {\portion{6}},
+    % calory={\unit[3]{kJ}},
+    source = {Soraya}
+]
+{Brownies de Milo}
+    
+    \ingredients{%
+        \unit[\nicefrac{3}{4}]{taza} & Azucar\\
+        \unit[\nicefrac{3}{4}]{taza} & Milo\\
+        \unit[\nicefrac{3}{4}]{taza} & Harina\\
+        \unit[\nicefrac{1}{2}]{taza} + 2 cdas & Mantequilla derretida\\
+        \unit[\nicefrac{1}{4}]{cdita} & Polvo de hornear\\
+        \unit[2]{cditas} & esencia de vainilla\\
+        2  & Huevos\\
+        1  & Yema\\
+        % \unit[2]{tasas} & Harina\\
+    }
+    
+    \preparation{%
+        \step Precalentar el horno a 180\degree C.
+        \step Mezclar muy bien la mantequilla con el az\'ucar, a\~nadir lentamente los huevos revolviendo constantemente. A\~nadir la vainilla y el Milo y revolver. 
+        \step Mezclar la harina con el polvo de hornear y a\~nadir esta mezcla a la primera. 
+        \step En un molde/refractaria grande engrasado y enharinado verter la mezcla y llevar al horno por 30 minutos a 180\degree C. 
+    }
+    
+    \hint{%
+    \begin{itemize}
+        \item La yema es indispensable para que queden melcochudos.
+        \item Dejar enfriar antes de cortar.
+    \end{itemize}
+    }
+    
+\end{recipe}

@@ -1,0 +1,58 @@
+% Complete recipe example
+\begin{recipe}
+[% 
+    preparationtime = {\unit[15]{min}},
+    bakingtime={\unit[12-15]{min}},
+    bakingtemperature={\protect\bakingtemperature{
+        % fanoven=\unit[230]{\textcelcius},
+        topbottomheat=\unit[230]{\degree C},
+        % topheat=\unit[195]{\degree C},
+        % gasstove=Level 2
+        }},
+    portion = {\portion{4}},
+    % calory={\unit[3]{kJ}},
+    source = {Erna}
+]
+{Masa de Pizza}
+    
+    % \graph
+    % {% pictures
+    %     small=pic/glass,     % small picture
+    %     big=pic/ingredients  % big picture
+    % }
+    
+    % \introduction{%
+    % \blindtext
+    % }
+    
+    \ingredients{%
+        \unit[500]{g} & Harina\\
+        \unit[4]{g} & Levadura\\
+        \unit[\nicefrac{1}{2}]{cda} & Azucar\\
+        \unit[\nicefrac{1}{4}]{cdita} & Sal\\
+        \unit[\nicefrac{1}{4}]{taza} & Leche\\
+        \unit[300]{ml} & Agua tibia\\
+        \unit[2]{cda} & Aceite de oliva\\
+        % \unit[2]{tasas} & Harina\\
+    }
+    
+    \preparation{%
+        \step Poner todos los ingredientes en un recipiente y mezclarlos por al menos 5 minutos. Dejar reposar la masa por aproximadamente 30 minutos.
+        \step Dividir la masa en porciones (2-6) y hacer bolas con cada pedazo
+        \step Poner la pizza en el horno (a 220\degree C, por aprox. 15-20 minutos), en una piedra para pizza (a 250\degree C, por aprox. 10-15 minutos) o en una sart\'en el\'ectrica (tercer nivel, primer lado 3 minutos, despu\'es voltear y agregar los ingredientes y otros 3 minutos).
+    }
+    
+    % \suggestion[Headline]
+    % {%
+    %     \blindtext
+    % }
+    
+    % \suggestion{%
+    %     \blindtext
+    % }
+    
+    \hint{%
+
+    }
+    
+\end{recipe}

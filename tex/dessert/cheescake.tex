@@ -1,0 +1,72 @@
+%% Mousse au Chocolat Example
+
+\begin{otherlanguage}{ngerman}
+
+\setHeadlines
+{% translation
+    inghead = Zutaten,
+    prephead = Zubereitung,
+    hinthead = Tipp,
+    continuationhead = Fortsetzung,
+    continuationfoot = Fortsetzung auf n\"achster Seite,
+    portionvalue = Personen,
+}
+
+\begin{recipe}
+[ % Optionale Eingaben
+    preparationtime = {\unit[2]{Stunden}},
+    portion = \portion{8},
+    bakingtime = {\unit[1]{Stunde}},
+    bakingtemperature={\protect\bakingtemperature{
+        topbottomheat=\unit[190]{\textcelcius}
+        }},
+    portion = {\portion{8-10}},
+    source = Erna
+]
+{K\"asekuchen}
+    \graph
+    {% Bilder
+        % small=pic/glass,    % kleines Bild
+        % big=pic/ingredients % großes (längeres) Bild
+    }
+    \ingredients
+    {% Zutaten
+        % 2 Tafeln & dunkle Schokolade (über \unit[70]{\%})\\
+        % 3 & Eier\\
+        % \unit[200]{ml} & Sahne\\
+        % \unit[40]{g} & Zucker\\
+        % \unit[50]{g} & Butter
+        \unit[350]{g} & Zucker \\
+        \unit[200]{g} & Magarine \\
+        \unit[6] & Ei \\
+        \unit[250]{g} &  Mehl \\
+        \unit[250]{ml} &  Sonnenblumen\"ol \\
+        \unit[750]{g} & Quark \\
+        \unit[5]{EL} & Milch \\
+        \unit[1]{} & Zitrone \\
+        \unit[1]{} & Vanillepudding- Pulver \\
+        \unit[1]{} & Vanillezucker \\
+    }
+
+    \preparation{%
+    \step Zunächst wird der Boden zubereiten. Die vorgesehe- ne Menge reicht für 3 Böden aus. Es werden 100g
+Zucker mit 200g Magarine schaumig gerührt.
+    \step 1 Ei hinzufügen und 250g Mehl unterrühren, sodass eine feste Teigmasse entsteht und den Teig mindes-
+tens eine Stunde im Kühlschrank ruhen lassen.
+    \step In einer weiteren Schüssel werden 750g Quark und 5 Eier verrührt.
+    \step Die restlichen 250g Zucker werden nach und nach hin- zugegeben. Nun das Öl langsam hinzugeben.
+    \step Den Saft einer Zitrone, die Milch, das Puddingpulver, den Vanillezucker, sowie eine Prise Salz hinzugeben
+und den Käse glattrühren.
+    \step Den Boden in eine gut eingefettete Springform geben und den Käse daraufgeben.
+    \step Den Kuchen eine Stunde im Ofen bei \unit[190]{\textcelcius} backen.
+
+    }
+
+    \hint
+    {% Tipp
+        Falls der Kuchen zu dunkel wird, kann man ihn mit Alufolie abdecken.
+    }
+
+\end{recipe}
+
+\end{otherlanguage}
