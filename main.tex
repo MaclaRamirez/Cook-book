@@ -13,15 +13,19 @@ a4paper,
 \usepackage{nicefrac}
 \usepackage{gensymb}
 
+% \addto\captionsenglish{% Replace "english" with the language you use
+%   \renewcommand{\contentsname}%
+%     {\"Ubersicht}%
+%   }
+
 \usepackage[
     nowarnings,
     %myconfig 
 ]
 {xcookybooky}
  
-\usepackage{blindtext}    % only needed for generating test text
-
 \DeclareRobustCommand{\textcelcius}{\ensuremath{^{\circ}\mathrm{C}}}
+
 
 \setcounter{secnumdepth}{1}
 \renewcommand*{\recipesection}[2][]
@@ -32,11 +36,26 @@ a4paper,
 {% no implementation to display the section name instead
 }
 
+\pdfmapfile{=emerald.map}
+\renewcommand{\step}
+{%
+    \stepcounter{step}%
+    \lettrine
+    [%
+        lines=2,
+        lhang=0,          % space into margin, value between 0 and 1
+        loversize=0.15,   % enlarges the height of the capital
+        slope=0em,
+        findent=1em,      % gap between capital and intended text
+        nindent=0em       % shifts all intended lines, begining with the second line
+    ]{\thestep}{}%
+}
+
 
 \usepackage{hyperref}    % must be the last package
 \hypersetup{%
-    pdfauthor            = {Sven Harder},
-    pdftitle             = {Example Recipes for xcookybooky},
+    pdfauthor            = {Tim Wolf},
+    pdftitle             = {Rezeptesammlung},
     pdfsubject           = {Recipes},
     pdfkeywords          = {example, recipes, cookbook, xcookybooky},
     pdfstartview         = {FitV},
@@ -52,6 +71,7 @@ a4paper,
 }
 
 \hbadness=10000	% Ignore underfull boxes
+% \makeatletter
 
 
 \begin{document}
